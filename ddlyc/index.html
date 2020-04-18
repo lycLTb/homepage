@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>qwq</title>
+</head>
+<body>
+	<p id="num">您已经吊打了lyc 0 次</p>
+
+	<p id="tms">您现在可以打 1 个lyc</p>
+
+	<script>
+		a=0;
+		t=1;
+		function dd(){
+			if (a+t>=500) alert("lyc被您打死啦（");
+			else{
+				a+=t;
+				document.getElementById("num").innerHTML="您已经吊打了lyc "+a+" 次";
+			}
+		}
+
+		function add(){
+			t+=1;
+			document.getElementById("tms").innerHTML="您现在可以打 "+t+" 个lyc";
+		}
+	</script>
+	<button onclick="dd()">qwq</button>
+	<br>
+	<br>
+	<button onclick="add()">更加快乐的吊打lyc！</button>
+</body>
+</html>
