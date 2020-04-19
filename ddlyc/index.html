@@ -13,11 +13,9 @@
 		t=1;
 		mx=500;
 		function dd(){
-			if (a+t>=mx) alert("lyc被您打死啦（");
-			else{
-				a+=t;
-				document.getElementById("num").innerHTML="您已经吊打了lyc "+a+" 次";
-			}
+			a+=t;
+			document.getElementById("num").innerHTML="您已经吊打了lyc "+a+" 次";
+			if (a>=mx) alert("lyc被您打死啦（");
 		}
 
 		function add(){
