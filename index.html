@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+	<script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+
 	<style type="text/css">
-		a{color:blue;}
-		a:link {text-decoration:none;}
-		a:hover {text-decoration:underline;}
+		#qwq {
+			margin-left: 10%;
+			margin-top: 5%;
+		}
 	</style>
 	<title>LTb的主页</title>
 </head>
 <body>
-	<p>用极其简陋的HTML写了个主页www</p>
-	<a href="https://lycltb.github.io">这个菜鸡的博客</a>
-	<a href="ddlyc/">快乐地吊打lyc！</a>
-	<br>
-	<p>之后闲的没事的话还会整点别的东西的www</p>
+	<div class="mdui-toolbar mdui-color-theme mdui-color-cyan">
+		<a href="#" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">menu</i></a>
+		<span class="mdui-typo-title">lyc 的 Homepage</span>
+		<div class="mdui-toolbar-spacer"></div>
+		<a href="https://lycltb.github.io/" class="mdui-btn mdui-ripple">My Blog</a>
+		<a href="ddlyc" class="mdui-btn mdui-ripple">吊打lyc</a>
+	</div>
+
+	<div id='qwq'>
+		<p>用极其简陋的HTML写了个主页www</p>
+		<p>之后闲的没事的话还会整点别的东西的www</p>
+	</div>
 </body>
 </html>

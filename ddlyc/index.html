@@ -16,9 +16,11 @@
 		t=1;
 		mx=500;
 		function dd(){
-			a+=t;
-			document.getElementById("num").innerHTML="您已经吊打了lyc "+a+" 次";
-			if (a>=mx) alert("lyc被您打死啦（");
+			if (a>=mx) mdui.alert("lyc被您打死啦（");
+			else{
+				a+=t;
+				document.getElementById("num").innerHTML="您已经吊打了lyc "+a+" 次";
+			}
 		}
 
 		function add(){
@@ -28,18 +30,18 @@
 	</script>
 </head>
 <body>
-	<div class="mdui-toolbar mdui-color-theme">
+	<div class="mdui-toolbar mdui-color-theme mdui-color-cyan">
 		<a href="https://lycltb.github.io/homepage/" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">arrow_back</i></a>
-	 	<span class="mdui-typo-title">Title</span>
-	 	<div class="mdui-toolbar-spacer"></div>
+		<span class="mdui-typo-title">吊打lyc！</span>
+		<div class="mdui-toolbar-spacer"></div>
 	</div>
 
 	<div id="qwq">
 		<p id="num">您已经吊打了 lyc 0 次</p>
 		<p id="tms">您现在可以打 1 个lyc</p>
 
-		<button onclick="dd()" class="mdui-btn mdui-color-grey mdui-ripple">qwq</button>
-		<button onclick="add()" class="mdui-btn mdui-color-grey mdui-ripple">更加快乐的吊打lyc！</button>
+		<button onclick="dd()" class="mdui-btn mdui-color-cyan mdui-ripple">qwq</button>
+		<button onclick="add()" class="mdui-btn mdui-color-cyan mdui-ripple">更加快乐的吊打lyc！</button>
 	</div>
 </body>
 </html>
