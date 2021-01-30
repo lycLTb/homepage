@@ -1,0 +1,18 @@
+body {margin: 10px 20% 100px 20%;}
+.top {margin-left: 95%;}
+a:link {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:visited {color: blue;}
+h2,h3 {text-align: center;}
+.copy-button{
+	position: absolute;
+	padding-left: 5px;
+	padding-right: 5px;
+	right: 20%;
+	margin-top: -16px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: gray;
+	cursor: pointer;
+}
+.copy-button:hover{text-decoration: none;}
